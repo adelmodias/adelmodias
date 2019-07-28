@@ -1,0 +1,63 @@
+body {
+  font-family: $text-font;
+  @include font-size(18px);
+  color: $text-color;
+  background: #edeef0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: $text-color;
+  font-family: $fonte-base;
+  @include font-size(16px);
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+  font-weight: $font-light;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  @include font-size(40px);
+}
+
+h2 {
+  @include font-size(32px);
+}
+
+h3 {
+  @include font-size(28px);
+}
+
+h4 {
+  @include font-size(24px);
+}
+
+h5 {
+  @include font-size(20px);
+}
+
+h6 {
+  @include font-size(16px);
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: none !important;
+}
+
+.hidden {
+  display: none;
+}

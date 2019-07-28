@@ -1,0 +1,32 @@
+// Fonts
+$fonte-base: 'Open Sans', sans-serif;;
+$text-font: $fonte-base;
+$font-size: 19px;
+$line-height: 22px;
+
+// Fonts - Weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 600;
+$font-bold: 700;
+$font-black: 800;
+
+// Fonts - Size
+$font-size-xl: $font-size + 10;
+$font-size-lg: $font-size + 3;
+$font-size-md: $font-size - 1;
+$font-size-sm: $font-size - 2;
+$font-size-xs: $font-size - 4;
+
+// Colors
+$primary-color: #05122f;
+$secondary-color: #04a9f5;;
+// $alternative-color: rgb(255,221,0);
+
+$title-color: #393c40;
+$subtitle: #aaaeb3;
+$text-color: #3c3f43;
+$border-color: #4d5053;
+
+// Spacing
+$gap: 15px;
