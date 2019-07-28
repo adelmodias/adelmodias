@@ -1,0 +1,54 @@
+.contact {
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &_form {
+
+    input,
+    textarea,
+    select {
+      background: transparent;
+      border: 2px solid rgba(0, 0, 0, 0.07);
+      @include border-radius(5px);
+      padding: 7px 25px;
+      @include font-size($font-size - 1);
+      color: $title-color;
+      font-family: $fonte-base;
+      outline: none;
+      margin-bottom: 1.3rem;
+      width: 100%;
+    }
+
+  }
+
+  &_list {
+    li {
+      span {
+        @include font-size(18px);
+        font-family: $fonte-base;
+        color: $title-color-transparent;
+        font-weight: $font-bold;
+      }
+
+      a {
+        color: $title-color;
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+  }
+
+  .social-media {
+    li {
+      display: inline-block;
+      margin-right: 3%;
+      @include font-size(22px);
+
+      a {
+        color: $title-color-transparent;
+      }
+    }
+  }
+}

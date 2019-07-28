@@ -6,7 +6,7 @@
 
     <?php if (have_posts()) : ?>
 
-    <h2><?php echo _e("Resultado da pesquisa por ", LANG_DOMAIN) . " \"" . $s . "\"" ?></h2>
+    <h2><?php echo _e("Resultado da pesquisa por ") . " \"" . $s . "\"" ?></h2>
     <ul>
       <?php while (have_posts()) : the_post(); ?>
       <li>
@@ -19,7 +19,7 @@
 
     <?php else : ?>
 
-    <h2><?php _e('Não foi encontrado nenhum arquivo.', LANG_DOMAIN); ?></h2>
+    <h2><?php _e('Não foi encontrado nenhum arquivo.'); ?></h2>
 
     <?php endif; ?>
 

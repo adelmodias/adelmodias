@@ -9,7 +9,7 @@
     <?php the_content(); ?>
 
     <?php if ( empty( get_the_content() ) ) { ?>
-      <p><?php _e("Esta página ainda não possui informação cadastrada.", LANG_DOMAIN); ?></p>
+      <p><?php _e("Esta página ainda não possui informação cadastrada."); ?></p>
     <?php } ?>
 
   </div>

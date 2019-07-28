@@ -8,11 +8,22 @@ License: GNU General Public License v2 or later
 
 One and only theme for IR Website for BC Fund RI
 */
+
 @import "base/reboot";
-@import "base/fonts";
 @import "base/vars";
 @import "base/mixins";
 
+@import "global/animations";
 @import "global/container";
 @import "global/grid";
+@import "global/content";
 @import "global/app";
+@import "global/buttons";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/portfolio";
+@import "pages/contact";
