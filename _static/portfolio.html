@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script>
+    document.documentElement.className += ' js';
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfólio - Adelmo Dias | Desenvolvedor FrontEnd</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Poppins:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77662004-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77662004-2');
+  </script>
+</head>
+
+<body>
+
+  <header class="header bg-white">
+    <div class="container">
+
+      <div class="header_grid">
+
+        <div class="header_brand">
+          <a href="./">
+            <h1>Adelmo Dias</h1>
+            <span>Desenvolvedor FrontEnd</span>
+          </a>
+        </div>
+
+        <div class="header_navigation">
+          <nav>
+            <button class="header_navigation_menu-mobile btn-transparent">Menu</button>
+            <ul>
+              <li>
+                <a href="./">Home</a>
+              </li>
+              <li>
+                <a href="./sobre">Sobre</a>
+              </li>
+              <li>
+                <a href="./portfolio" class="active">Projetos</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="./contato" class="btn btn-transparent">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main class="content portfolio js-scroll">
+    <div class="container">
+
+      <div class="content_title" title-section="Projetos">
+        <span class="underline">Trabalhos recentes</span>
+        <h1>Selecionei os meus melhores projetos pessoais</h1>
+      </div>
+
+      <div class="portfolio_cards js-scroll">
+
+        <div class="portfolio_card">
+          <div class="portfolio_card_title-bar">
+            <h4>Conversor de Moedas</h4>
+            <label>
+              <span class="javascript">Javascript</span>
+            </label>
+          </div>
+
+          <p class="desc">Aplicação que faz a conversão de moedas construída em duas versões: Vue.js e React</p>
+
+          <hr>
+
+          <div class="portfolio_card_footer">
+            <a href="https://adelmo.dev/p/conversor-de-moedas/vue/" target="_blank" class="btn-transparent">Acessar projeto</a>
+            <p>Jul/2019</p>
+            <!-- jan. fev. mar. abr. maio jun. jul. ago. set. out. nov. dez -->
+          </div>
+        </div>
+
+        <div class="portfolio_card">
+          <div class="portfolio_card_title-bar">
+            <h4>Stock Trader</h4>
+            <label>
+              <span class="vue">Vue</span>
+            </label>
+          </div>
+
+          <p class="desc">Essa aplicação criada no curso "Vue JS 2 - O Guia Completo" simula o home broker de uma
+            corretora de investimentos e faz integração com o firebase para ter um back-end rodando.</p>
+
+          <hr>
+
+          <div class="portfolio_card_footer">
+            <a href="https://adelmo.dev/p/stock-trader/" target="_blank" class="btn-transparent">Acessar projeto</a>
+            <p>Abr/2019</p>
+            <!-- jan. fev. mar. abr. maio jun. jul. ago. set. out. nov. dez -->
+          </div>
+        </div>
+
+        <div class="portfolio_card">
+          <div class="portfolio_card_title-bar">
+            <h4>Youtube Clone</h4>
+            <label>
+              <span class="css">CSS</span>
+            </label>
+          </div>
+
+          <p class="desc">Layout do youtube clonado utilizando CSS grid e Javascript para manipulações. Livre de frameworks.</p>
+
+          <hr>
+
+          <div class="portfolio_card_footer">
+            <a href="https://adelmo.dev/p/clone-youtube/" target="_blank" class="btn-transparent">Acessar projeto</a>
+            <p>Ago/2018</p>
+            <!-- jan. fev. mar. abr. maio jun. jul. ago. set. out. nov. dez -->
+          </div>
+        </div>
+
+        <div class="portfolio_card">
+          <div class="portfolio_card_title-bar">
+            <h4>Animais fantásticos</h4>
+            <label>
+              <span class="javascript">JavaScript</span>
+            </label>
+          </div>
+
+          <p class="desc">Projeto criado para criar componentes animados utilizando CSS e JavaScript.</p>
+
+          <hr>
+
+          <div class="portfolio_card_footer">
+            <a href="https://adelmo.dev/p/animais-fantasticos/" target="_blank" class="btn-transparent">Acessar projeto</a>
+            <p>Ago/2018</p>
+          </div>
+        </div>
+
+        <div class="portfolio_card">
+          <div class="portfolio_card_title-bar">
+            <h4>TODO List</h4>
+            <label>
+                <span class="vue">Vue</span>
+            </label>
+          </div>
+
+          <p class="desc">Aplicação simples criada com Vue que pode ser utilizada para organizar as tarefas diárias e marca-las
+              como concluidas, e visualizando a porcentagem de Concluidas x Não concluidas.</p>
+
+          <hr>
+
+          <div class="portfolio_card_footer">
+            <a href="https://adelmo.dev/p/todo-list/" target="_blank" class="btn-transparent">Acessar projeto</a>
+            <p>Fev/2019</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer_text">2019 &copy Todos os direitos reservados. Adelmo Dias - Desenvolvedor FrontEnd</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+.portfolio {
+  &_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_card {
+    padding: $gap;
+    border: 1px solid $border-color;
+    @include border-radius();
+    max-width: 350px;
+    min-height: 245px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    flex: 1 0 30%;
+
+    p.desc {
+      min-height: 96px;
+    }
+
+    &_title-bar {
+      display: grid;
+      grid-template-columns: 73% 22%;
+      margin-bottom: 1rem;
+      position: relative;
+
+      h4 {
+        @include font-size(18px);
+        font-family: $fonte-base;
+        color: $title-color-transparent;
+      }
+
+      label {
+        span {
+          display: inline-block;
+          padding: .1875rem .625rem;
+          color: #fff;
+          font-size: .825rem;
+          border-radius: .25rem;
+          margin-left: .9375rem;
+          position: absolute;
+          right: 0;
+
+          &.vue {
+            background-color: rgb(44, 62, 80);
+          }
+
+          &.javascript {
+            background-color: rgb(241, 224, 90);
+          }
+
+          &.css {
+            background-color: rgb(86, 61, 124);
+          }
+
+          &.php {
+            background-color: rgb(79, 93, 149);
+          }
+
+          &.html {
+            background-color: rgb(227, 76, 38);
+          }
+        }
+      }
+    }
+
+    &_footer {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      p {
+        @include font-size(14px);
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

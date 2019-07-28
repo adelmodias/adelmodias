@@ -1,0 +1,36 @@
+// Fonts
+$fonte-base: 'Poppins', sans-serif;
+$text-font: 'Lato', sans-serif;
+$font-size: 16px;
+$line-height: 22px;
+
+// Fonts - Weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 600;
+$font-black: 700;
+
+// Fonts - Size
+$font-size-xl: $font-size+10;
+$font-size-lg: $font-size+3;
+$font-size-md: $font-size - 1;
+$font-size-sm: $font-size - 2;
+$font-size-xs: $font-size - 4;
+
+// Colors
+$primary-color: #6B4C9D;
+$secondary-color: #F27C36;
+$alternative-color: #ED485F;
+
+$gradient: 45deg,
+rgb(242, 125, 56) 0%,
+rgb(237, 72, 95) 100%;
+
+$title-color: #2d2d43;
+$title-color-transparent: rgba(37,47,62,.8);
+$text-color: rgba(37,47,62,.8);
+$border-color: rgba(0,0,0,0.08);
+
+// Spacing
+$gap: 15px;

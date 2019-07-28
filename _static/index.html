@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script>
+    document.documentElement.className += ' js';
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Adelmo Dias - Desenvolvedor FrontEnd</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Poppins:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77662004-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77662004-2');
+  </script>
+  <meta name="google-site-verification" content="1mxYHUY_kynBQeliJofVuMknjxl0XQDDFN5UY8PwiFI" />
+  <meta name="p:domain_verify" content="5cd7dbb689231f7f5c804fd83af73e76"/>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <div class="header_grid">
+
+        <div class="header_brand">
+          <a href="./">
+            <h1>Adelmo Dias</h1>
+            <span>Desenvolvedor FrontEnd</span>
+          </a>
+        </div>
+
+        <div class="header_navigation">
+          <nav>
+            <button class="header_navigation_menu-mobile btn-transparent">Menu</button>
+            <ul>
+              <li>
+                <a href="./" class="active">Home</a>
+              </li>
+              <li>
+                <a href="./sobre">Sobre</a>
+              </li>
+              <li>
+                <a href="./portfolio">Projetos</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="./contato" class="btn btn-transparent">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="container">
+      <h3 class="underline js-scroll">PORTFÓLIO</h3>
+      <p class="js-scroll">Olá. Sou um profissional multidisciplinar trabalhando para criar sites e aplicações web
+        incríveis. Dê uma olhada em alguns dos meus trabalhos abaixo.</p>
+      <a href="#sobre" class="js-scroll">Consulte mais informações <div class="arrow-down"></div></a>
+    </div>
+  </div>
+
+  <main>
+    <section id="sobre" class="skills">
+      <div class="container">
+
+        <div class="skills_what-i-do js-scroll">
+          <p>Meu nome é <strong class="underline"><a href="./sobre" class="link">Adelmo Dias</a></strong>, desenvolvedor
+            Web Full-Stack e posso oferecer
+            serviços para qualquer tipo de desenvolvimento web que você possa ter, desde um layout com UI/UX de
+            excelência à API's robustas que conectam o banco de dados com o front-end da aplicação.</p>
+
+          <blockquote cite="https://developer.mozilla.org/samples/html/figure.html">"Conhecer o homem - esta é a base de
+            todo o sucesso." <cite>- Charles Chaplin</cite></blockquote>
+
+        </div>
+
+        <div class="skills_slide skills_workflow js-scroll">
+
+          <div>
+            <div class="circle">
+              <img src="./img/front-end.png" alt="Front-end">
+            </div>
+            <span>Front-end</span>
+          </div>
+
+          <div>
+            <div class="circle">
+              <img src="./img/api.png" alt="Restful API">
+            </div>
+            <span>Restful API</span>
+          </div>
+
+          <div>
+            <div class="circle">
+              <img src="./img/back-end.png" alt="Back-end">
+            </div>
+            <span>Back-end</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="projects" id="projetos">
+
+        <div class="projects_title js-scroll">
+
+          <div class="projects_title-text">
+            <span class="underline">Trabalhoes recentes</span>
+            <h3>Selecionei os meus melhores projetos pessoais.</h3>
+            <small>Meu portfólio completo não está aqui: A maior parte dos meus trabalhos é realizado para empresas que confiam no meu serviço.</small>
+          </div>
+
+          <div class="projects_title-button">
+            <a href="./portfolio" class="btn-transparent">
+              Todos os projetos
+            </a>
+          </div>
+
+        </div>
+
+        <div class="projects_slides js-scroll">
+
+          <div class="projects_slides_card">
+            <div class="projects_slides_card_title-bar">
+              <h4>Conversor de Moedas</h4>
+              <label>
+                  <span class="javascript">JavaScript</span>
+              </label>
+            </div>
+
+            <p class="desc">Aplicação que faz a conversão de moedas construída em duas versões: Vue.js e React</p>
+
+            <hr>
+
+            <div class="projects_slides_card_footer">
+              <a href="https://adelmo.dev/p/conversor-de-moedas/vue/" target="_blank" class="btn-transparent">Acessar projeto</a>
+              <p>Jul/2019</p>
+              <!-- jan. fev. mar. abr. maio jun. jul. ago. set. out. nov. dez -->
+            </div>
+          </div>
+
+          <div class="projects_slides_card">
+            <div class="projects_slides_card_title-bar">
+              <h4>Stock Trader</h4>
+              <label>
+                <span class="vue">Vue</span>
+              </label>
+            </div>
+
+            <p class="desc">Essa aplicação criada no curso "Vue JS 2 - O Guia Completo" simula o home broker de uma corretora de
+              investimentos e faz integração com o firebase para ter um back-end rodando.</p>
+
+            <hr>
+
+            <div class="projects_slides_card_footer">
+              <a href="https://adelmo.dev/p/stock-trader/" target="_blank" class="btn-transparent">Acessar projeto</a>
+              <p>Abr/2019</p>
+              <!-- jan. fev. mar. abr. maio jun. jul. ago. set. out. nov. dez -->
+            </div>
+          </div>
+
+          <div class="projects_slides_card">
+            <div class="projects_slides_card_title-bar">
+              <h4>Youtube Clone</h4>
+              <label>
+                <span class="css">CSS</span>
+              </label>
+            </div>
+
+            <p class="desc">Layout do youtube clonado utilizando CSS grid e Javascript para manipulações. Livre de frameworks.</p>
+
+            <hr>
+
+            <div class="projects_slides_card_footer">
+              <a href="https://adelmo.dev/p/clone-youtube/" target="_blank" class="btn-transparent">Acessar projeto</a>
+              <p>Ago/2018</p>
+            </div>
+          </div>
+
+          <div class="projects_slides_card">
+            <div class="projects_slides_card_title-bar">
+              <h4>Animais fantásticos</h4>
+              <label>
+                <span class="javascript">JavaScript</span>
+              </label>
+            </div>
+
+            <p class="desc">Projeto criado para criar componentes animados utilizando CSS e JavaScript.</p>
+
+            <hr>
+
+            <div class="projects_slides_card_footer">
+              <a href="https://adelmo.dev/p/animais-fantasticos/" target="_blank" class="btn-transparent">Acessar
+                projeto</a>
+              <p>Ago/2018</p>
+            </div>
+          </div>
+
+          <div class="projects_slides_card">
+            <div class="projects_slides_card_title-bar">
+              <h4>TODO List</h4>
+              <label>
+                <span class="vue">Vue</span>
+              </label>
+            </div>
+
+            <p class="desc">Aplicação simples criada com Vue que pode ser utilizada para organizar as tarefas diárias e marca-las
+              como concluidas, e visualizando a porcentagem de Concluidas x Não concluidas.</p>
+
+            <hr>
+
+            <div class="projects_slides_card_footer">
+              <a href="https://adelmo.dev/p/todo-list/" target="_blank" class="btn-transparent">Acessar projeto</a>
+              <p>Fev/2019</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer_text">2019 &copy Todos os direitos reservados. Adelmo Dias - Desenvolvedor FrontEnd</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
