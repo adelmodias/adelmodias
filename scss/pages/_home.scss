@@ -5,7 +5,6 @@
   border: 1px solid $border-color;
   // background: white;
   min-height: 100vh;
-  background-image: url("./img/banner_home.jpg");
 
   &:before {
     content: '';
@@ -27,6 +26,7 @@
     @include font-size($font-size + 30px);
     position: relative;
     color: $title-color-transparent;
+    text-transform: uppercase;
 
     &:before {
       width: 45%;

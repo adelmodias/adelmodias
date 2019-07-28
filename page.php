@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php get_template_part('partials/page', 'title'); ?>
+<?php //get_template_part('partials/page', 'title'); ?>
 <section class="wp-content">
 
   <div class="container bg-white p-4">

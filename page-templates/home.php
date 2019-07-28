@@ -4,6 +4,8 @@
 get_header();
 ?>
 
-<h1>Home page</h1>
+<?php get_template_part('partials/home', 'banner'); ?>
+<?php get_template_part('partials/home', 'about'); ?>
+<?php get_template_part('partials/home', 'portfolio'); ?>
 
 <?php get_footer(); ?>
