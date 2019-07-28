@@ -1,5 +1,5 @@
 <?php if ( have_rows('home_banner') ) : while( have_rows('home_banner') ) : the_row(); ?>
-<div class="banner" background: url(<?php the_sub_field('home_banner_background'); ?>);>
+<div class="banner" style="background: url(<?php the_sub_field('home_banner_background'); ?>);">
   <div class="container">
 
     <h3 class="underline js-scroll"><?php the_sub_field('home_banner_title'); ?></h3>
