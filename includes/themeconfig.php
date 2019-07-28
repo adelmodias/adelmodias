@@ -1,15 +1,11 @@
-<?php 
-/** Add theme support for menus **/
-add_theme_support('menus');
-
-/** Register Theme's menus **/
-function register_theme_menus()
+<?php
+// Theme Setup (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
+function startertheme_setup()
 {
-    register_nav_menus(
-        array(
-            'primary-menu'    => __('Primary Menu', 'primary-menu'),
-        )
-    );
+  add_theme_support('automatic-feed-links');
+  add_theme_support('structured-post-formats', array('link', 'video'));
+  add_theme_support('post-formats', array('aside', 'audio', 'chat', 'gallery', 'image', 'quote', 'status'));
+  register_nav_menu('primary', __('Main menu', 'startertheme'));
+  add_theme_support('post-thumbnails');
 }
-add_action('init', 'register_theme_menus');
-?>
+add_action('after_setup_theme', 'startertheme_setup');

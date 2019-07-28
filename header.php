@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
-<!-- script_path: <?php echo  basename(__FILE__, ''); ?> -->
 
 <head>
   <title><?php wp_title('|', true, 'right');?></title>
