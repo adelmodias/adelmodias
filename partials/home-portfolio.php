@@ -10,9 +10,9 @@
                 <!-- <small><?php the_sub_field('portfolio_description'); ?></small> -->
             </div>
 
-            <div class="projects_title-button">
+            <!-- <div class="projects_title-button">
                 <a href="<?php the_sub_field('portfolio_button_url'); ?>" class="btn-transparent"><?php the_sub_field('portfolio_button_text'); ?></a>
-            </div>
+            </div> -->
 
         </div>
 
