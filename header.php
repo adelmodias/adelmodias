@@ -43,10 +43,10 @@
           <button class="header_navigation_menu-mobile btn-transparent">Menu</button>
           <ul>
             <li>
-              <a href="./" class="active">Home</a>
+              <a href="<?php get_home_url(); ?>" class="<?php if(is_front_page()) { echo "active"; } ?>">Home</a>
             </li>
             <li>
-              <a href="./sobre">Sobre</a>
+              <a href="./sobre" class="<?php if(is_page(9)) { echo "active"; } ?>">Sobre</a>
             </li>
             <!-- <li>
               <a href="./portfolio">Projetos</a>
@@ -56,7 +56,7 @@
             </li> -->
             <li>
               <!-- <a href="./contato" class="btn btn-transparent">Contato</a> -->
-              <a href="./contato">Contato</a>
+              <a href="./contato" class="<?php if(is_page(15)) { echo "active"; } ?>">Contato</a>
             </li>
           </ul>
         </nav>
