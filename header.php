@@ -7,6 +7,9 @@
 <!--<![endif]-->
 
 <head>
+  <script>
+    document.documentElement.className += ' js';
+  </script>
   <title><?php wp_title('|', true, 'right');?></title>
   <!-- <meta name="description" content="<?php bloginfo('description'); ?>"> -->
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -43,10 +46,10 @@
           <button class="header_navigation_menu-mobile btn-transparent">Menu</button>
           <ul>
             <li>
-              <a href="<?php get_home_url(); ?>" class="<?php if(is_front_page()) { echo "active"; } ?>">Home</a>
+              <a href="<?php echo get_home_url(); ?>" class="<?php if(is_front_page()) { echo "active"; } ?>">Home</a>
             </li>
             <li>
-              <a href="./sobre" class="<?php if(is_page(9)) { echo "active"; } ?>">Sobre</a>
+              <a href="<?php echo esc_url( get_permalink(9) ); ?>" class="<?php if(is_page(9)) { echo "active"; } ?>">Sobre</a>
             </li>
             <!-- <li>
               <a href="./portfolio">Projetos</a>
@@ -56,7 +59,7 @@
             </li> -->
             <li>
               <!-- <a href="./contato" class="btn btn-transparent">Contato</a> -->
-              <a href="./contato" class="<?php if(is_page(15)) { echo "active"; } ?>">Contato</a>
+              <a href="<?php echo esc_url( get_permalink(15) ); ?>" class="<?php if(is_page(15)) { echo "active"; } ?>">Contato</a>
             </li>
           </ul>
         </nav>
