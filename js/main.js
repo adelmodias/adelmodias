@@ -1,38 +1,3 @@
-$('.projects_slides').slick({
-  dots: true,
-  infinite: true,
-  speed: 650,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
-
 $('.skills_slide').slick({
   dots: true,
   infinite: true,
@@ -89,7 +54,6 @@ function initAnimacaoScroll() {
     window.addEventListener('scroll', animaScroll);
   }
 }
-
 initAnimacaoScroll();
 
 // Scroll suave links internos
@@ -105,14 +69,6 @@ function initScrollSuave() {
       behavior: 'smooth',
       block: 'start',
     });
-
-    // Forma alternativa
-    /*const topo = section.offsetTop;
-    window.scrollTo({
-      top: topo,
-      behavior: 'smooth',
-    });*/
-
   }
 
   linksInternos.forEach((link) => {
@@ -130,7 +86,7 @@ function menuMobile() {
     navMenuEl.classList.toggle(show);
   })
 }
-menuMobile()
+menuMobile();
 
 //Add background after scroll
 $(function () {

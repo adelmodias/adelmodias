@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="container">
-        <p class="footer_text">2019 &copy Todos os direitos reservados. Adelmo Dias - Desenvolvedor FrontEnd</p>
+        <p class="footer_text"><?php echo Date('Y');?> &copy Todos os direitos reservados. <?php bloginfo('title'); ?> - <?php bloginfo('description'); ?></p>
     </div>
 </footer>
 

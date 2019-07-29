@@ -8,7 +8,7 @@
 
 <head>
   <title><?php wp_title('|', true, 'right');?></title>
-  <meta name="description" content="<?php bloginfo('description'); ?>">
+  <!-- <meta name="description" content="<?php bloginfo('description'); ?>"> -->
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -48,14 +48,15 @@
             <li>
               <a href="./sobre">Sobre</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="./portfolio">Projetos</a>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <a href="#">Blog</a>
-            </li>
+            </li> -->
             <li>
-              <a href="./contato" class="btn btn-transparent">Contato</a>
+              <!-- <a href="./contato" class="btn btn-transparent">Contato</a> -->
+              <a href="./contato">Contato</a>
             </li>
           </ul>
         </nav>
