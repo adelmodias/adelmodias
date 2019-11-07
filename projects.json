@@ -66,9 +66,17 @@
     {
         "name": "The Stock Trader",
         "description": "Esse aplicativo simula um home broker de investimentos e se integra ao Firebase para salvar os valores e quais ações o usuário adquiriu.",
-        "category": "javascript",
+        "category": "vue",
         "date": "Jun/2019",
         "url": "https://adelmodias.github.io/the-stock-trader/",
         "repository": "https://github.com/adelmodias/the-stock-trader"
+    },
+    {
+        "name": "O Matador de Monstros",
+        "description": "Jogo simples de ataque e defesa usando JavaScript e Vue.js.",
+        "category": "vue",
+        "date": "Jun/2019",
+        "url": "https://adelmodias.github.io/o-matador-de-monstros/",
+        "repository": "https://github.com/adelmodias/o-matador-de-monstros"
     }
 ]
