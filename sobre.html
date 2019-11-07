@@ -1,104 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="js">
 
 <head>
-  <script>
-    document.documentElement.className += ' js';
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sobre - Adelmo Dias | Desenvolvedor FrontEnd</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sobre - Adelmo Dias - Desenvolvedor FrontEnd</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Poppins:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77662004-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77662004-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-77662004-2');
-  </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-77662004-2');
+    </script>
 </head>
 
 <body>
 
-  <header class="header bg-white">
-    <div class="container">
+    <header class="header bg-white">
+        <div class="container">
 
-      <div class="header_grid">
+            <div class="header_grid">
 
-        <div class="header_brand">
-          <a href="./">
-            <h1>Adelmo Dias</h1>
-            <span>Desenvolvedor FrontEnd</span>
-          </a>
+                <div class="header_brand">
+                    <a href="./">
+                        <h1>Adelmo Dias</h1>
+                        <span>Desenvolvedor FrontEnd</span>
+                    </a>
+                </div>
+
+                <div class="header_navigation">
+                    <nav>
+                        <button class="header_navigation_menu-mobile btn-transparent">Menu</button>
+                        <ul>
+                            <li>
+                                <a href="./">Home</a>
+                            </li>
+                            <li>
+                                <a href="./sobre.html" class="active">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="./portfolio.html">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="./contato.html" class="btn btn-transparent">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
         </div>
+    </header>
 
-        <div class="header_navigation">
-          <nav>
-            <button class="header_navigation_menu-mobile btn-transparent">Menu</button>
-            <ul>
-              <li>
-                <a href="./">Home</a>
-              </li>
-              <li>
-                <a href="./sobre" class="active">Sobre</a>
-              </li>
-              <li>
-                <a href="./portfolio">Projetos</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="./contato" class="btn btn-transparent">Contato</a>
-              </li>
-            </ul>
-          </nav>
+    <main class="content about js-scroll">
+        <div class="container">
+
+            <div class="content_title" title-section="Sobre">
+                <span class="underline">Mais de 5 anos de experiência</span>
+                <h1>Desenvolvedor Front-end e Wordpress</h1>
+            </div>
+
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-4">
+                    <img src="./img/sobre.jpg" alt="Adelmo Dias - Desenvolvedor Front-end">
+                </div>
+                <div class="col-sm-8">
+                    <p>Sou um Desenvolvedor FrontEnd autodidata com foco no Front-end. Atualmente eu trabalho na MZ Group, empresa <span title="Fonte: LinkedIn MZ Group">"líder global em soluções de relações com investidores"</span> escrevendo códigos para construir sites em WordPress e contribuindo com melhorias nas ferramentas internas utilizando JavaScript.</p>
+                    <p>Eu acredito em reiventar a roda, construir coisas do zero e escrever código com o mínimo de bibliotecas e dependências possíveis. Como desenvolvedor front-end, preparei HTML responsivo para centenas de sites e também os integrei no WordPress.</p>
+                    <!-- <p>Eu comecei este site com o objetivo de criar um repositório de códigos para compartilhar conteúdos atualizados e objetivos. A internet está cheia de tutoriais desatualizados ou que, simplesmente, possuem uma péssima qualidade e/ou didática.</p>
+          <p>Acesse o meu <strong class="underline"><a href="./blog" target="_blank" class="link">blog</a></strong> e conheça os meus conteúdos.</p> -->
+                </div>
+            </div>
+
         </div>
+    </main>
 
-      </div>
-
-    </div>
-  </header>
-
-  <main class="content about js-scroll">
-    <div class="container">
-
-      <div class="content_title" title-section="Sobre">
-          <span class="underline">Mais de 5 anos de experiência</span>
-          <h1>Desenvolvedor Front-end e Wordpress</h1>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="./img/sobre.jpg" alt="Adelmo Dias - Desenvolvedor Front-end">
+    <footer class="footer">
+        <div class="container">
+            <p class="footer_text">2019 &copy Todos os direitos reservados. Adelmo Dias - Desenvolvedor FrontEnd</p>
         </div>
-        <div class="col-sm-8">
-          <p>Sou um Desenvolvedor FrontEnd autodidata com foco no Front-end. Atualmente eu trabalho na MZ Group, empresa <span title="Fonte: LinkedIn MZ Group">"líder global em soluções de relações com investidores"</span> escrevendo códigos para construir sites em WordPress e contribuindo com melhorias nas ferramentas internas utilizando JavaScript.</p>
-          <p>Eu acredito em reiventar a roda, construir coisas do zero e escrever código com o mínimo de bibliotecas e dependências possíveis. Como desenvolvedor front-end, preparei HTML responsivo para centenas de sites e também os integrei no WordPress.</p>
-          <p>Eu comecei este site com o objetivo de criar um repositório de códigos para compartilhar conteúdos atualizados e objetivos. A internet está cheia de tutoriais desatualizados ou que, simplesmente, possuem uma péssima qualidade e/ou didática.</p>
-          <p>Acesse o meu <strong class="underline"><a href="./blog" target="_blank" class="link">blog</a></strong> e conheça os meus conteúdos.</p>
-        </div>
-      </div>
+    </footer>
 
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="footer_text">2019 &copy Todos os direitos reservados. Adelmo Dias - Desenvolvedor FrontEnd</p>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
