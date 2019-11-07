@@ -1,140 +1,141 @@
 .header {
-  width: 100%;
-  padding: $gap 0;
-  position: fixed;
-  z-index: 10;
+    width: 100%;
+    padding: $gap 0;
+    position: fixed;
+    z-index: 10;
 
-  &_grid {
-    display: grid;
-    grid-template-columns: repeat(12, 8.33%);
-  }
-
-  &_brand {
-    grid-column: 1 / 4;
-
-    @media (max-width: 980px) {
-      grid-column: 1 / 9;
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(12, 8.33%);
     }
 
-    a {
-      color: $primary-color;
-      font-family: $fonte-base;
-
-      &:hover {
-        text-decoration: none;
-      }
-
-      h1 {
-        margin: 0;
-        line-height: 30px;
-      }
-
-      span {
-        color: $title-color;
-        letter-spacing: .69px;
-      }
-
-    }
-  }
-
-  &_navigation {
-    grid-column: 5 / 13;
-    display: flex;
-    align-items: center;
-
-    @media (max-width: 980px) {
-      grid-column: 9 / 13;
-    }
-
-    nav {
-      width: 100%;
-      text-align: right;
-
-      ul {
-        list-style: none;
-        margin: 0;
+    &_brand {
+        grid-column: 1 / 4;
 
         @media (max-width: 980px) {
-          display: none;
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          background: rgb(75, 0, 130);
-          height: 100vh;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          z-index: 15;
-
-          &.show {
-            display: flex;
-          }
+            grid-column: 1 / 9;
         }
 
-        li {
-          display: inline-block;
-          margin-right: $gap;
-
-          a {
+        a {
+            color: $primary-color;
             font-family: $fonte-base;
-            @include font-size($font-size + 2);
-            color: $title-color;
-            position: relative;
-
-            @media (max-width: 980px) {
-              color: white;
-              @include font-size($font-size + 10);
-            }
-
-            &:before {
-              opacity: 0;
-              width: 0;
-              height: 5px;
-              position: absolute;
-              background: $primary-color;
-              @include border-radius(2.5px);
-              left: 0;
-              z-index: -1;
-              top: $gap + 3;
-            }
 
             &:hover {
-              text-decoration: none;
-
-              &:before {
-                content: '';
-                opacity: .7;
-                width: 100%;
-              }
+                text-decoration: none;
             }
 
-            &.active:before {
-              content: '';
-              opacity: .7;
-              width: 100%;
-              height: 5px;
-              position: absolute;
-              background: $primary-color;
-              @include border-radius(2.5px);
-              left: 0;
-              z-index: -1;
-              top: $gap + 3;
+            h1 {
+                margin: 0;
+                line-height: 30px;
             }
-          }
+
+            span {
+                color: $title-color;
+                letter-spacing: .69px;
+            }
+
         }
-      }
     }
 
-    &_menu-mobile {
-      z-index: 20;
-      position: relative;
-      text-transform: uppercase;
-      @media (min-width: 980px) {
-        display: none;
-      }
-    }
+    &_navigation {
+        grid-column: 5 / 13;
+        display: flex;
+        align-items: center;
 
-  }
+        @media (max-width: 980px) {
+            grid-column: 9 / 13;
+        }
+
+        nav {
+            width: 100%;
+            text-align: right;
+
+            ul {
+                list-style: none;
+                margin: 0;
+
+                @media (max-width: 980px) {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background: rgb(75, 0, 130);
+                    height: 100vh;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 15;
+
+                    &.show {
+                        display: flex;
+                    }
+                }
+
+                li {
+                    display: inline-block;
+                    margin-right: $gap;
+
+                    a {
+                        font-family: $fonte-base;
+                        @include font-size($font-size + 2);
+                        color: $title-color;
+                        position: relative;
+
+                        @media (max-width: 980px) {
+                            color: white;
+                            @include font-size($font-size + 10);
+                        }
+
+                        &:before {
+                            opacity: 0;
+                            width: 0;
+                            height: 5px;
+                            position: absolute;
+                            background: $primary-color;
+                            @include border-radius(2.5px);
+                            left: 0;
+                            z-index: -1;
+                            top: $gap + 3;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+
+                            &:before {
+                                content: '';
+                                opacity: .7;
+                                width: 100%;
+                            }
+                        }
+
+                        &.active:before {
+                            content: '';
+                            opacity: .7;
+                            width: 100%;
+                            height: 5px;
+                            position: absolute;
+                            background: $primary-color;
+                            @include border-radius(2.5px);
+                            left: 0;
+                            z-index: -1;
+                            top: $gap + 3;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_menu-mobile {
+            z-index: 20;
+            position: relative;
+            text-transform: uppercase;
+
+            @media (min-width: 980px) {
+                display: none;
+            }
+        }
+
+    }
 }

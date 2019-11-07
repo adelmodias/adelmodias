@@ -1,258 +1,262 @@
 .banner {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  border: 1px solid $border-color;
-  // background: white;
-  min-height: 100vh;
-  background-image: url("./img/banner_home.jpg");
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.90);
-  }
-
-  * {
-    z-index: 9;
-  }
-
-  h3 {
-    max-width: 50%;
-    @include font-size($font-size + 30px);
-    position: relative;
-    color: $title-color-transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid $border-color;
+    // background: white;
+    min-height: 100vh;
+    background-image: url("./img/banner_home.jpg");
 
     &:before {
-      width: 45%;
-      top: $gap + 30;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.90);
     }
-  }
 
-  p {
-    max-width: 50%;
-    @include font-size($font-size + 13px);
-    font-weight: 300;
-    margin: 1.5rem 0;
-  }
+    * {
+        z-index: 9;
+    }
 
-  @media (max-width: 980px) {
+    h3 {
+        max-width: 50%;
+        @include font-size($font-size + 30px);
+        position: relative;
+        color: $title-color-transparent;
 
-    h3,
+        &:before {
+            width: 45%;
+            top: $gap + 30;
+        }
+    }
+
     p {
-      max-width: 100%;
+        max-width: 50%;
+        @include font-size($font-size + 13px);
+        font-weight: 300;
+        margin: 1.5rem 0;
     }
-  }
 
-  a {
-    color: $text-color;
-    font-weight: $font-bold;
-    text-transform: uppercase;
-    position: absolute;
+    @media (max-width: 980px) {
 
-    .arrow-down {
-      float: right;
-      width: 10px;
-      height: 10px;
-      border-right: 3px solid $text-color;
-      border-bottom: 3px solid $text-color;
-      @include transform(rotate(45deg));
-      margin-left: 10px;
-      position: relative;
-      top: 4px;
+        h3,
+        p {
+            max-width: 100%;
+        }
     }
-  }
+
+    a {
+        color: $text-color;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        position: absolute;
+
+        .arrow-down {
+            float: right;
+            width: 10px;
+            height: 10px;
+            border-right: 3px solid $text-color;
+            border-bottom: 3px solid $text-color;
+            @include transform(rotate(45deg));
+            margin-left: 10px;
+            position: relative;
+            top: 4px;
+        }
+    }
 
 }
 
 .skills {
-  text-align: center;
-
-  &_what-i-do {
-    margin: 0 auto;
-    width: 75%;
-
-    @media (max-width: 980px) {
-      width: 100%;
-    }
-
-    p:nth-child(1) {
-      @include font-size(25px);
-      font-weight: 300;
-    }
-
-    p {
-      @include font-size(21.5px);
-    }
-  }
-
-  &_workflow {
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
     text-align: center;
-    margin-top: $gap + 55;
 
-    div:nth-child(2) {
-      position: relative;
+    &_what-i-do {
+        margin: 0 auto;
+        width: 75%;
 
-      &:before,
-      &:after {
-        content: '';
-        width: 200px;
-        height: 1px;
-        background: rgba(0, 0, 0, 0.08);
-        position: absolute;
-        top: 40%;
-      }
+        @media (max-width: 980px) {
+            width: 100%;
+        }
 
-      &:before {
-        left: -19.9%;
-      }
+        p:nth-child(1) {
+            @include font-size(25px);
+            font-weight: 300;
+        }
 
-      &:after {
-        left: 66%;
-      }
+        p {
+            @include font-size(21.5px);
+        }
     }
 
-    span {
-      color: rgba(37, 47, 62, .5);
-      @include font-size($font-size + 2);
+    &_workflow {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        text-align: center;
+        margin-top: $gap + 55;
+
+        div:nth-child(2) {
+            position: relative;
+
+            &:before,
+            &:after {
+                content: '';
+                width: 200px;
+                height: 1px;
+                background: rgba(0, 0, 0, 0.08);
+                position: absolute;
+                top: 40%;
+            }
+
+            &:before {
+                left: -19.9%;
+            }
+
+            &:after {
+                left: 66%;
+            }
+        }
+
+        span {
+            color: rgba(37, 47, 62, .5);
+            @include font-size($font-size + 2);
+        }
     }
-  }
 
 }
 
 .projects {
 
-  &_title {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    position: relative;
-    margin-bottom: $gap + 55;
+    &_title {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        position: relative;
+        margin-bottom: $gap + 55;
 
-    @media (max-width: 980px) {
-      grid-template-columns: repeat(1, 100%);
-    }
-
-    &:before {
-      content: 'P';
-      @include font-size(300px);
-      color: rgba(9, 9, 19, 0.03);
-      position: absolute;
-      top: 0;
-      font-weight: $font-bold;
-      line-height: 100px;
-    }
-
-    &-text {
-      color: $title-color;
-      font-family: $fonte-base;
-
-      span {
-        @include font-size($font-size);
-        text-transform: uppercase;
-        color: rgba(0, 0, 10, 0.45);
-        font-weight: $font-bold;
+        @media (max-width: 980px) {
+            grid-template-columns: repeat(1, 100%);
+        }
 
         &:before {
-          top: $gap + 1;
-        }
-      }
-
-      h3 {
-        @include font-size(30px);
-        color: $title-color-transparent;
-      }
-    }
-
-    &-button {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-  }
-
-  &_slides {
-    padding: 0 $gap;
-
-    .slick-slide {
-      margin: 0 5px;
-    }
-
-    .slick-dots {
-      bottom: -50px;
-    }
-
-    &_card {
-      padding: $gap;
-      border: 1px solid $border-color;
-      @include border-radius();
-      min-height: 245px;
-
-      p.desc {
-        min-height: 96px;
-      }
-
-      &_title-bar {
-        display: grid;
-        grid-template-columns: 73% 22%;
-        margin-bottom: 1rem;
-        position: relative;
-
-        h4 {
-          @include font-size(18px);
-          font-family: $fonte-base;
-          color: $title-color-transparent;
-        }
-
-        label {
-          span {
-            display: inline-block;
-            padding: .1875rem .625rem;
-            color: #fff;
-            font-size: .825rem;
-            border-radius: .25rem;
-            margin-left: .9375rem;
+            content: 'P';
+            @include font-size(300px);
+            color: rgba(9, 9, 19, 0.03);
             position: absolute;
-            right: 0;
-
-            &.vue {
-              background-color: rgb(44, 62, 80);
-            }
-            &.javascript {
-              background-color: rgb(241, 224, 90);
-            }
-            &.css {
-              background-color: rgb(86, 61, 124);
-            }
-            &.php {
-              background-color: rgb(79, 93, 149);
-            }
-            &.html {
-              background-color: rgb(227, 76, 38);
-            }
-          }
+            top: 0;
+            font-weight: $font-bold;
+            line-height: 100px;
         }
-      }
 
-      &_footer {
-        display: flex;
-        align-items: center;
-        position: relative;
-        // a {
+        &-text {
+            color: $title-color;
+            font-family: $fonte-base;
 
-        // }
-        p {
-          @include font-size(14px);
-          position: absolute;
-          right: 0;
+            span {
+                @include font-size($font-size);
+                text-transform: uppercase;
+                color: rgba(0, 0, 10, 0.45);
+                font-weight: $font-bold;
+
+                &:before {
+                    top: $gap + 1;
+                }
+            }
+
+            h3 {
+                @include font-size(30px);
+                color: $title-color-transparent;
+            }
         }
-      }
+
+        &-button {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
-  }
+
+    &_slides {
+        padding: 0 $gap;
+
+        .slick-slide {
+            margin: 0 5px;
+        }
+
+        .slick-dots {
+            bottom: -50px;
+        }
+
+        &_card {
+            padding: $gap;
+            border: 1px solid $border-color;
+            @include border-radius();
+            min-height: 245px;
+
+            p.desc {
+                min-height: 96px;
+            }
+
+            &_title-bar {
+                display: grid;
+                grid-template-columns: 73% 22%;
+                margin-bottom: 1rem;
+                position: relative;
+
+                h4 {
+                    @include font-size(18px);
+                    font-family: $fonte-base;
+                    color: $title-color-transparent;
+                }
+
+                label {
+                    span {
+                        display: inline-block;
+                        padding: .1875rem .625rem;
+                        color: #fff;
+                        font-size: .825rem;
+                        border-radius: .25rem;
+                        margin-left: .9375rem;
+                        position: absolute;
+                        right: 0;
+
+                        &.vue {
+                            background-color: rgb(44, 62, 80);
+                        }
+
+                        &.javascript {
+                            background-color: rgb(241, 224, 90);
+                        }
+
+                        &.css {
+                            background-color: rgb(86, 61, 124);
+                        }
+
+                        &.php {
+                            background-color: rgb(79, 93, 149);
+                        }
+
+                        &.html {
+                            background-color: rgb(227, 76, 38);
+                        }
+                    }
+                }
+            }
+
+            &_footer {
+                display: flex;
+                align-items: center;
+                position: relative;
+                // a {
+
+                // }
+                p {
+                    @include font-size(14px);
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
 }

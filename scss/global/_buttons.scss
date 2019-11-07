@@ -1,21 +1,21 @@
 .btn-transparent {
-  background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.07);
-  @include border-radius(5px);
-  padding: 7px 25px;
-  @include font-size($font-size - 1);
-  color: $title-color;
-  font-family: $fonte-base;
-  outline: none;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.07);
+    @include border-radius(5px);
+    padding: 7px 25px;
+    @include font-size($font-size - 1);
+    color: $title-color;
+    font-family: $fonte-base;
+    outline: none;
 
-  &:hover {
-    color: white;
-    text-decoration: none;
-    @include gradient-background($secondary-color, $alternative-color);
-    @include transition(.3s ease);
+    &:hover {
+        color: white;
+        text-decoration: none;
+        @include gradient-background($secondary-color, $alternative-color);
+        @include transition(.3s ease);
 
-    &:before {
-      display: none;
+        &:before {
+            display: none;
+        }
     }
-  }
 }

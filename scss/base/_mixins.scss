@@ -1,183 +1,183 @@
 //Mixins e Placeholders
 @mixin box-sizing {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @mixin transform($transforms) {
-  -webkit-transform: $transforms;
-  -moz-transform: $transforms;
-  -ms-transform: $transforms;
-  -o-transform: $transforms;
-  transform: $transforms;
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
 }
 
 @mixin filter($filters) {
-  -webkit-filter: $filters;
-  -moz-filter: $filters;
-  -ms-filter: $filters;
-  -o-filter: $filters;
-  filter: $filters;
+    -webkit-filter: $filters;
+    -moz-filter: $filters;
+    -ms-filter: $filters;
+    -o-filter: $filters;
+    filter: $filters;
 }
 
 @mixin border-radius($raio: 5px) {
-  -webkit-border-radius: $raio;
-  -moz-border-radius: $raio;
-  -ms-border-radius: $raio;
-  -o-border-radius: $raio;
-  border-radius: $raio;
+    -webkit-border-radius: $raio;
+    -moz-border-radius: $raio;
+    -ms-border-radius: $raio;
+    -o-border-radius: $raio;
+    border-radius: $raio;
 }
 
 @mixin transition($time: 0.35s, $effect: all) {
-  -webkit-transition: $time $effect;
-  -moz-transition: $time $effect;
-  -ms-transition: $time $effect;
-  -o-transition: $time $effect;
-  transition: $time $effect;
+    -webkit-transition: $time $effect;
+    -moz-transition: $time $effect;
+    -ms-transition: $time $effect;
+    -o-transition: $time $effect;
+    transition: $time $effect;
 }
 
 @mixin box-shadow($shadow) {
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  -ms-box-shadow: $shadow;
-  -o-box-shadow: $shadow;
-  box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    box-shadow: $shadow;
 }
 
 @mixin text-shadow($shadow) {
-  -webkit-text-shadow: $shadow;
-  -moz-text-shadow: $shadow;
-  -ms-text-shadow: $shadow;
-  -o-text-shadow: $shadow;
-  text-shadow: $shadow;
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    -o-text-shadow: $shadow;
+    text-shadow: $shadow;
 }
 
 @mixin placeholder($color) {
-  &::-webkit-input-placeholder {
-    color: $color;
-  }
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
 
-  &::-moz-input-placeholder {
-    color: $color;
-  }
+    &::-moz-input-placeholder {
+        color: $color;
+    }
 
-  &::-ms-input-placeholder {
-    color: $color;
-  }
+    &::-ms-input-placeholder {
+        color: $color;
+    }
 
-  &::-o-input-placeholder {
-    color: $color;
-  }
+    &::-o-input-placeholder {
+        color: $color;
+    }
 
-  &::input-placeholder {
-    color: $color;
-  }
+    &::input-placeholder {
+        color: $color;
+    }
 }
 
 //rotate
 @mixin rotate($deg) {
-  @include transform(rotate(#{$deg}deg));
+    @include transform(rotate(#{$deg}deg));
 }
 
 //scale
 @mixin scale($scale) {
-  @include transform(scale($scale));
+    @include transform(scale($scale));
 }
 
 // grayscale
 @mixin grayscale($grayscale) {
-  @include filter(grayscale($grayscale));
+    @include filter(grayscale($grayscale));
 }
 
 //translate
 @mixin translate($x, $y) {
-  @include transform(translate($x, $y));
+    @include transform(translate($x, $y));
 }
 
 //skew
 @mixin skew($x, $y) {
-  @include transform(skew(#{$x}deg, #{$y}deg));
+    @include transform(skew(#{$x}deg, #{$y}deg));
 }
 
 //transform origin
 @mixin transform-origin ($origin) {
-  -webkit-transform-origin: $origin;
-  -moz-transform-origin: $origin;
-  -ms-transform-origin: $origin;
-  -o-transform-origin: $origin;
-  transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    -moz-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    transform-origin: $origin;
 }
 
 @mixin justify-content {
-  text-align: justify;
+    text-align: justify;
 
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 //remove text from tags
 %image-replacement {
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 //fonts
 @function calculate-rem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
 }
 
 @mixin font-size($size) {
-  font-size: $size; //Fallback in px
-  font-size: calculate-rem($size);
+    font-size: $size; //Fallback in px
+    font-size: calculate-rem($size);
 }
 
 @mixin page-title {
-  font-weight: $font-weight-bold;
-  letter-spacing: $letter-spacing-lg;
-  color: $primary-color;
-  display: block;
-  width: 100%;
-  @include font-size($font-size-xl);
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-lg;
+    color: $primary-color;
+    display: block;
+    width: 100%;
+    @include font-size($font-size-xl);
 }
 
 @mixin content-title {
-  font-weight: $font-weight-bold;
-  letter-spacing: $letter-spacing-lg;
-  color: $primary-color;
-  margin-top: $text-spacing;
-  display: block;
-  width: 100%;
-  @include font-size($font-size-md);
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-lg;
+    color: $primary-color;
+    margin-top: $text-spacing;
+    display: block;
+    width: 100%;
+    @include font-size($font-size-md);
 }
 
 @mixin page-content {
-  font-weight: $font-weight-regular;
-  letter-spacing: $letter-spacing-lg;
-  margin-top: $text-spacing;
-  color: $text-color;
-  display: block;
-  width: 100%;
-  @include font-size($font-size-md);
+    font-weight: $font-weight-regular;
+    letter-spacing: $letter-spacing-lg;
+    margin-top: $text-spacing;
+    color: $text-color;
+    display: block;
+    width: 100%;
+    @include font-size($font-size-md);
 }
 
 @mixin gradient-background($color-one, $color-two) {
-  background-image: -moz-linear-gradient(45deg,
-    $color-one 0%,
-    $color-two 100%);
-  background-image: -webkit-linear-gradient(45deg,
-    $color-one 0%,
-    $color-two 100%);
-  background-image: -ms-linear-gradient(45deg,
-    $color-one 0%,
-    $color-two 100%);
+    background-image: -moz-linear-gradient(45deg,
+            $color-one 0%,
+            $color-two 100%);
+    background-image: -webkit-linear-gradient(45deg,
+            $color-one 0%,
+            $color-two 100%);
+    background-image: -ms-linear-gradient(45deg,
+            $color-one 0%,
+            $color-two 100%);
 }
