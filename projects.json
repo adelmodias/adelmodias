@@ -16,20 +16,20 @@
         "repository": "https://github.com/adelmodias/crash-course-axios"
     },
     {
-        "name": 1,
-        "description": null,
-        "category": null,
-        "date": null,
-        "url": null,
-        "repository": null
+        "name": "Vue Shop",
+        "description": "Loja virtual com painel administrativo desenvolvidos utilizando Vue.js",
+        "category": "vue",
+        "date": "Jun/2019",
+        "url": "https://adelmodias.github.io/vue-shop/",
+        "repository": "https://github.com/adelmodias/vue-shop"
     },
     {
-        "name": 1,
-        "description": null,
-        "category": null,
-        "date": null,
-        "url": null,
-        "repository": null
+        "name": "jQuery Accordion",
+        "description": "Plugin simples desenvolvido com jQuery que pode ser utilizados em seções de FAQs.",
+        "category": "javascript",
+        "date": "Ago/2019",
+        "url": "https://adelmodias.github.io/jquery-accordion/",
+        "repository": "https://github.com/adelmodias/jquery-accordion"
     },
     {
         "name": 1,
