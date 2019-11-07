@@ -40,11 +40,11 @@
         "repository": "https://github.com/adelmodias/javascript-calculator"
     },
     {
-        "name": 1,
-        "description": null,
-        "category": null,
-        "date": null,
-        "url": null,
-        "repository": null
+        "name": "Resumo do carrinho de compras",
+        "description": "Script que consulta a API para renderizar um resumo do carrinho de compras. mostrando os produtos, foto, valores e somando o valor total.",
+        "category": "javascript",
+        "date": "Ago/2019",
+        "url": "https://adelmodias.github.io/challenge/",
+        "repository": "https://github.com/adelmodias/challenge"
     }
 ]
