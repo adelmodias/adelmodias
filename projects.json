@@ -32,12 +32,12 @@
         "repository": "https://github.com/adelmodias/jquery-accordion"
     },
     {
-        "name": 1,
-        "description": null,
-        "category": null,
-        "date": null,
-        "url": null,
-        "repository": null
+        "name": "Javascript Calculator",
+        "description": "Calculadora desenvolvida como exemplo do Curso Completo de JavaScript da hcode na Udemy.com.",
+        "category": "javascript",
+        "date": "Ago/2018",
+        "url": "https://adelmodias.github.io/javascript-calculator/",
+        "repository": "https://github.com/adelmodias/javascript-calculator"
     },
     {
         "name": 1,
