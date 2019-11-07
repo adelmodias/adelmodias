@@ -62,5 +62,13 @@
         "date": "Set/2018",
         "url": "https://adelmodias.github.io/whatsapp-clone/",
         "repository": "https://github.com/adelmodias/whatsapp-clone"
+    },
+    {
+        "name": "The Stock Trader",
+        "description": "Esse aplicativo simula um home broker de investimentos e se integra ao Firebase para salvar os valores e quais ações o usuário adquiriu.",
+        "category": "javascript",
+        "date": "Jun/2019",
+        "url": "https://adelmodias.github.io/the-stock-trader/",
+        "repository": "https://github.com/adelmodias/the-stock-trader"
     }
 ]
