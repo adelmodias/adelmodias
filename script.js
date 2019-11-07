@@ -72,6 +72,7 @@ const sections = document.querySelectorAll('.js-scroll');
 function initAnimacaoScroll() {
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.7;
+
     function animaScroll() {
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
@@ -83,7 +84,6 @@ function initAnimacaoScroll() {
         }*/
       });
     }
-
     animaScroll();
 
     window.addEventListener('scroll', animaScroll);
