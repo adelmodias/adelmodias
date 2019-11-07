@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Javascript Password Generator",
+        "description": "Neste projeto, construi um gerador de senha com opções de comprimento e caracteres especiais usando JavaScript.",
+        "category": "javascript",
+        "date": "Out/2019",
+        "url": "https://adelmodias.github.io/JavaScript-Password-Generator/",
+        "repository": "https://github.com/adelmodias/JavaScript-Password-Generator"
+    },
+    {
+        "name": "Axios HTTPS Requests (CRUD)",
+        "description": "Utilizei o cliente HTTP do Axios para fazer requisições, adicionar cabeçalhos, criar interceptores e muito mais.",
+        "category": "javascript",
+        "date": "Out/2019",
+        "url": "https://adelmodias.github.io/crash-course-axios/",
+        "repository": "https://github.com/adelmodias/crash-course-axios"
+    },
+    {
+        "name": 1,
+        "description": null,
+        "category": null,
+        "date": null,
+        "url": null,
+        "repository": null
+    },
+    {
+        "name": 1,
+        "description": null,
+        "category": null,
+        "date": null,
+        "url": null,
+        "repository": null
+    },
+    {
+        "name": 1,
+        "description": null,
+        "category": null,
+        "date": null,
+        "url": null,
+        "repository": null
+    },
+    {
+        "name": 1,
+        "description": null,
+        "category": null,
+        "date": null,
+        "url": null,
+        "repository": null
+    }
+]
