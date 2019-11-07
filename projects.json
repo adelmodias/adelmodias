@@ -46,5 +46,21 @@
         "date": "Ago/2019",
         "url": "https://adelmodias.github.io/challenge/",
         "repository": "https://github.com/adelmodias/challenge"
+    },
+    {
+        "name": "Dropbox Clone",
+        "description": "Clone da aplicação web do Dropbox utilizando Firebase no back-end.",
+        "category": "javascript",
+        "date": "Set/2018",
+        "url": "https://adelmodias.github.io/dropbox-clone/",
+        "repository": "https://github.com/adelmodias/dropbox-clone"
+    },
+    {
+        "name": "Whatsapp Clone",
+        "description": "Clone da aplicação web do Whatsapp utilizando Firebase no back-end.",
+        "category": "javascript",
+        "date": "Set/2018",
+        "url": "https://adelmodias.github.io/whatsapp-clone/",
+        "repository": "https://github.com/adelmodias/whatsapp-clone"
     }
 ]
