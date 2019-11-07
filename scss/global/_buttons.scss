@@ -7,13 +7,12 @@
   color: $title-color;
   font-family: $fonte-base;
   outline: none;
-  @include transition(.3s ease);
 
   &:hover {
     color: white;
     text-decoration: none;
-    // @include gradient-background($secondary-color, $alternative-color);
-    background: $primary-color;
+    @include gradient-background($secondary-color, $alternative-color);
+    @include transition(.3s ease);
 
     &:before {
       display: none;
