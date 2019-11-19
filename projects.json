@@ -3,7 +3,6 @@
         "name": "Javascript Password Generator",
         "description": "Neste projeto, construi um gerador de senha com opções de comprimento e caracteres especiais usando JavaScript.",
         "category": "javascript",
-        "date": "Out/2019",
         "url": "https://adelmodias.github.io/JavaScript-Password-Generator/",
         "repository": "https://github.com/adelmodias/JavaScript-Password-Generator"
     },
@@ -11,7 +10,6 @@
         "name": "Axios HTTPS Requests (CRUD)",
         "description": "Utilizei o cliente HTTP do Axios para fazer requisições, adicionar cabeçalhos, criar interceptores e muito mais.",
         "category": "javascript",
-        "date": "Out/2019",
         "url": "https://adelmodias.github.io/crash-course-axios/",
         "repository": "https://github.com/adelmodias/crash-course-axios"
     },
@@ -19,7 +17,6 @@
         "name": "Vue Shop",
         "description": "Loja virtual com painel administrativo desenvolvidos utilizando Vue.js",
         "category": "vue",
-        "date": "Jun/2019",
         "url": "https://adelmodias.github.io/vue-shop/",
         "repository": "https://github.com/adelmodias/vue-shop"
     },
@@ -27,7 +24,6 @@
         "name": "jQuery Accordion",
         "description": "Plugin simples desenvolvido com jQuery que pode ser utilizados em seções de FAQs.",
         "category": "javascript",
-        "date": "Ago/2019",
         "url": "https://adelmodias.github.io/jquery-accordion/",
         "repository": "https://github.com/adelmodias/jquery-accordion"
     },
@@ -35,7 +31,6 @@
         "name": "Javascript Calculator",
         "description": "Calculadora desenvolvida como exemplo do Curso Completo de JavaScript da hcode na Udemy.com.",
         "category": "javascript",
-        "date": "Ago/2018",
         "url": "https://adelmodias.github.io/javascript-calculator/",
         "repository": "https://github.com/adelmodias/javascript-calculator"
     },
@@ -43,7 +38,6 @@
         "name": "Resumo do carrinho de compras",
         "description": "Script que consulta a API para renderizar um resumo do carrinho de compras. mostrando os produtos, foto, valores e somando o valor total.",
         "category": "javascript",
-        "date": "Ago/2019",
         "url": "https://adelmodias.github.io/challenge/",
         "repository": "https://github.com/adelmodias/challenge"
     },
@@ -51,7 +45,6 @@
         "name": "Dropbox Clone",
         "description": "Clone da aplicação web do Dropbox utilizando Firebase no back-end.",
         "category": "javascript",
-        "date": "Set/2018",
         "url": "https://adelmodias.github.io/dropbox-clone/",
         "repository": "https://github.com/adelmodias/dropbox-clone"
     },
@@ -59,7 +52,6 @@
         "name": "Whatsapp Clone",
         "description": "Clone da aplicação web do Whatsapp utilizando Firebase no back-end.",
         "category": "javascript",
-        "date": "Set/2018",
         "url": "https://adelmodias.github.io/whatsapp-clone/",
         "repository": "https://github.com/adelmodias/whatsapp-clone"
     },
@@ -67,7 +59,6 @@
         "name": "The Stock Trader",
         "description": "Esse aplicativo simula um home broker de investimentos e se integra ao Firebase para salvar os valores e quais ações o usuário adquiriu.",
         "category": "vue",
-        "date": "Jun/2019",
         "url": "https://adelmodias.github.io/the-stock-trader/",
         "repository": "https://github.com/adelmodias/the-stock-trader"
     },
@@ -75,8 +66,35 @@
         "name": "O Matador de Monstros",
         "description": "Jogo simples de ataque e defesa usando JavaScript e Vue.js.",
         "category": "vue",
-        "date": "Jun/2019",
         "url": "https://adelmodias.github.io/o-matador-de-monstros/",
         "repository": "https://github.com/adelmodias/o-matador-de-monstros"
+    },
+    {
+        "name": "Todo List app",
+        "description": "Gerenciamento de tarefas feito com Javascript puro.",
+        "category": "javascript",
+        "url": "https://adelmodias.github.io/todo-list/",
+        "repository": "https://github.com/adelmodias/todo-list"
+    },
+    {
+        "name": "Isotope.js",
+        "description": "Sistema de filtros utilizando a biblioteca Isotope.js",
+        "category": "javascript",
+        "url": "https://adelmodias.github.io/isotope-filters/",
+        "repository": "https://github.com/adelmodias/isotope-filters"
+    },
+    {
+        "name": "Conversor de Moedas",
+        "description": "Conversor de moeda desenvolvido em duas versões: React e Vue. Executando solicitações HTTP para conversões.",
+        "category": "javascript",
+        "url": "https://adelmodias.github.io/conversor-de-moedas/",
+        "repository": "https://github.com/adelmodias/conversor-de-moedas"
+    },
+    {
+        "name": "Youtube Clone",
+        "description": "Clone do layout do Youtube utilizando CSS Grid.",
+        "category": "javascript",
+        "url": "https://adelmodias.github.io/youtube-clone/",
+        "repository": "https://github.com/adelmodias/youtube-clone"
     }
 ]
